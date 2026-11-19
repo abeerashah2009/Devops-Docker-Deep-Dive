@@ -1,0 +1,15 @@
+name: ci
+
+on: [push]
+
+defaults:
+  run:
+    working-directory: Lab-30-Docker-in-CICD-Pipeline
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: chmod +x ci.sh
+      - run: ./ci.sh
