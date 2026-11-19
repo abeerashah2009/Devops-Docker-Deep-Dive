@@ -1,0 +1,42 @@
+LAB 06 - RUNNING INTERACTIVE CONTAINERS
+========================================
+
+1. Docker Version
+Command: sudo docker --version
+Result: Docker version 29.9.0
+
+2. Docker Service
+Command: systemctl is-active docker
+Result: active
+
+3. Ubuntu Image
+Command: sudo docker pull ubuntu:24.04
+Result: Image downloaded successfully.
+
+4. Interactive Container
+Command: sudo docker run -it ubuntu:24.04 /bin/bash
+
+Verified:
+- hostname: f6b0a0ac732b
+- whoami: root
+- ps aux: Processes displayed successfully.
+- OS: Ubuntu 24.04.5 LTS
+- VERSION_ID: 24.04
+- Exit status: Exited (0)
+
+5. Detached Container
+Command: sudo docker run -d --name bg-demo ubuntu:24.04 sleep 300
+Result: Container started successfully.
+
+6. Docker Exec
+Command: sudo docker exec bg-demo cat /etc/os-release | grep VERSION_ID
+Output: VERSION_ID="24.04"
+
+7. Cleanup
+- Removed bg-demo.
+- Removed exited Ubuntu lab containers.
+- Final docker ps -a: Empty.
+
+8. LMS Assessment
+Score: 100/100
+Status: PASSED
