@@ -1,0 +1,28 @@
+Lab 21 - Docker Container Lifecycle Hooks
+LMS Score: 100/100
+Status: PASSED
+
+Docker Version: 29.9.0
+Docker Buildx: v0.38.0
+Docker Compose: v5.6.0
+
+Docker Image: my-echo-app:latest
+Base Image: alpine:3.20
+
+Dockerfile Configuration:
+ENTRYPOINT ["echo"]
+CMD ["Hello, world!"]
+
+Verified Default Output:
+Hello, world!
+
+Verified CMD Override:
+Docker is awesome!
+
+Verified ENTRYPOINT Override:
+Entrypoint replaced; running as: root
+
+Verified Image Configuration:
+[echo] [Hello, world!]
+
+All practical tests passed.
