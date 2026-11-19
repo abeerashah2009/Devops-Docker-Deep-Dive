@@ -1,0 +1,49 @@
+LAB 14: CREATING A USER-DEFINED BRIDGE NETWORK
+===============================================
+
+ENVIRONMENT
+-----------
+Ubuntu 24.04.5 LTS: PASS
+Docker 29.9.0: PASS
+Docker service active: PASS
+Hello-world test: PASS
+
+CUSTOM BRIDGE NETWORK
+---------------------
+mynet created: PASS
+Bridge driver verified: PASS
+Local scope verified: PASS
+
+NGINX CONTAINERS
+----------------
+nginx:1.27 image pulled: PASS
+container1 created: PASS
+container2 created: PASS
+Both containers running: PASS
+Both containers attached to mynet: PASS
+
+CONTAINER COMMUNICATION
+-----------------------
+container2 name resolution: PASS
+Nginx HTML page retrieved: PASS
+HTTP status code 200: PASS
+
+DEFAULT BRIDGE COMPARISON
+-------------------------
+container3 created: PASS
+Default bridge mode verified: PASS
+Name resolution failure exit code 6: PASS
+
+CLEANUP
+-------
+container1 removed: PASS
+container2 removed: PASS
+container3 removed: PASS
+mynet removed: PASS
+No lab containers remaining: PASS
+
+LMS EVALUATION
+--------------
+Lab Status: PASSED
+Final Score: 100/100
+Evaluator: Al Baari
