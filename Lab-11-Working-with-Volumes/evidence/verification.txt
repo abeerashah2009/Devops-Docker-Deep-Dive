@@ -1,0 +1,37 @@
+LAB 11: WORKING WITH VOLUMES
+============================
+
+ENVIRONMENT
+-----------
+Operating System: Ubuntu 24.04
+Docker Version: 29.9.0
+Image: alpine:3.20
+
+VOLUME DETAILS
+--------------
+Volume Name: myvolume
+Volume Driver: local
+Container Name: volcontainer
+Mount Path: /data
+Data File: /data/hello.txt
+
+VERIFICATION RESULTS
+--------------------
+1. Docker version: verified
+2. Docker without sudo: successful
+3. Named volume myvolume: created
+4. Alpine image: downloaded
+5. Container volcontainer: created
+6. File hello.txt: created in volume
+7. Volume data read: Hello World
+8. Volume metadata: inspected
+9. Original container: removed
+10. Data after container removal: Hello World
+11. Data persistence check: PASS
+12. Volume existence check: PASS
+
+LMS EVALUATION
+--------------
+Lab Status: PASSED
+Final Score: 100/100
+Evaluator: Al Baari
