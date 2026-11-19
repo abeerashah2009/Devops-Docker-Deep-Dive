@@ -1,0 +1,67 @@
+DOCKER LAB 02 - VERIFICATION EVIDENCE
+=====================================
+
+Operating System:
+Ubuntu 24.04.5 LTS
+
+Architecture:
+x86_64
+
+1. DOCKER ENGINE
+----------------
+Command: docker --version
+Result: Docker version 29.10.0
+
+2. DOCKER COMPOSE
+-----------------
+Command: docker compose version
+Result: Docker Compose version v5.8.0
+
+3. DOCKER BUILDX
+----------------
+Command: docker buildx version
+Result: Docker Buildx v0.39.0
+
+4. DOCKER GROUP
+---------------
+Command: groups
+Result: docker group membership confirmed.
+
+5. DOCKER DAEMON
+----------------
+Command: sudo systemctl is-active docker
+Result: active
+
+6. DOCKER SERVICE
+-----------------
+Command: systemctl status docker --no-pager
+Result: active (running)
+Startup: enabled
+
+7. DOCKER SYSTEM INFORMATION
+----------------------------
+Command: docker info
+Result: Client and Server information displayed successfully.
+Storage Driver: overlayfs
+Cgroup Driver: systemd
+Default Runtime: runc
+
+8. HELLO WORLD CONTAINER
+------------------------
+Command: docker run --rm hello-world
+
+Result:
+Hello from Docker!
+
+Image downloaded successfully.
+Container executed successfully.
+
+FINAL STATUS
+============
+All applicable Docker installation and verification checks passed.
+
+Windows and macOS installation sections:
+Not applicable to this Ubuntu Linux environment.
+
+LMS Score:
+Pending confirmation.
