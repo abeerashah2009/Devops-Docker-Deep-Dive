@@ -1,0 +1,48 @@
+LAB 16: DOCKER COMPOSE BASICS
+=============================
+
+ENVIRONMENT
+-----------
+Ubuntu 24.04: PASS
+Docker Engine 29.9.0: PASS
+Docker Compose v5.6.0: PASS
+Docker service active: PASS
+Hello World test: PASS
+
+TASK 1: DOCKER COMPOSE INSTALLATION
+----------------------------------
+Docker version verified: PASS
+Compose version verified: PASS
+Docker service enabled and active: PASS
+
+TASK 2: COMPOSE CONFIGURATION
+-----------------------------
+docker-compose.yml created: PASS
+Nginx service configured: PASS
+Alpine app service configured: PASS
+Compose configuration validated: PASS
+Both services listed: PASS
+
+TASK 3: START AND VERIFY SERVICES
+---------------------------------
+Port 8080 checked and free: PASS
+Compose services started: PASS
+Web container running: PASS
+App container exited with code 0: PASS
+Nginx HTTP status 200: PASS
+Nginx welcome page verified: PASS
+Application log message verified: PASS
+
+CLEANUP
+-------
+Compose containers removed: PASS
+Compose network removed: PASS
+No Compose containers remaining: PASS
+Nginx image preserved: PASS
+Docker service active after cleanup: PASS
+
+LMS EVALUATION
+--------------
+Lab Status: PASSED
+Final Score: 100/100
+Evaluated by: Al Baari
