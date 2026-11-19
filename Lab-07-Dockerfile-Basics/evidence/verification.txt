@@ -1,0 +1,44 @@
+LAB 07 - DOCKERFILE BASICS
+=========================
+
+1. Docker
+Version: 29.9.0
+Service: active
+
+2. Base Image
+ubuntu:24.04 pulled successfully.
+
+3. Dockerfile
+Created with:
+- FROM ubuntu:24.04
+- ENV DEBIAN_FRONTEND=noninteractive
+- RUN apt-get update and install curl
+- RUN creates /etc/lab-info
+- CMD curl --version
+
+4. Image Build
+Command: sudo docker build -t my-ubuntu .
+Result: Build successful.
+
+5. Image Inspection
+Commands:
+- sudo docker images my-ubuntu
+- sudo docker history my-ubuntu | head
+
+Result: Image and build layers verified.
+
+6. Default CMD
+Command: sudo docker run --rm my-ubuntu
+Result: curl 8.5.0 displayed.
+
+7. Curl Verification
+Command: sudo docker run --rm my-ubuntu curl --version | head -1
+Result: curl 8.5.0
+
+8. Lab Info File
+Command: sudo docker run --rm my-ubuntu cat /etc/lab-info
+Output: built with Dockerfile Basics
+
+9. LMS Assessment
+Score: 100/100
+Status: PASSED
