@@ -1,0 +1,28 @@
+Lab 18 - Docker Logs and Debugging
+LMS Status: Passed
+LMS Score: 88/100
+
+Docker Engine: 29.10.0
+Docker Compose: v5.8.0
+
+Nginx Image: nginx:1.27-alpine
+Nginx Container: my_nginx
+Port Mapping: 8082:80
+
+HTTP / Response: 200
+HTTP /nope Response: 404
+
+Failed Container: bad
+Failed Container Output: oops
+Failed Container Exit Code: 3
+
+Nginx Master Process: PID 1
+Nginx Worker Processes: PIDs 31 and 32
+NGINX_VERSION: 1.27.5
+
+Cleanup:
+Both lab containers removed.
+No lab containers remained.
+Docker Service: active
+
+Final LMS Result: 88/100 - Passed
