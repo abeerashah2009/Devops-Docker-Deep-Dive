@@ -1,0 +1,51 @@
+LAB 15: LINKING CONTAINERS
+=========================
+
+ENVIRONMENT
+-----------
+Ubuntu 24.04.5 LTS: PASS
+Docker 29.9.0: PASS
+Docker service active: PASS
+Hello-world test: PASS
+
+TASK 1: LEGACY CONTAINER LINKING
+--------------------------------
+httpd:2.4 image pulled: PASS
+mysql:8.4 image pulled: PASS
+MySQL initialization: PASS
+myweb linked to mydb using --link: PASS
+mysql alias resolution: PASS
+One-way link verified: PASS
+Docker deprecation warning observed: PASS
+
+TASK 2: USER-DEFINED NETWORK
+----------------------------
+mynetwork created: PASS
+Bridge driver verified: PASS
+mydb container created: PASS
+myweb container created: PASS
+MySQL initialization: PASS
+mydb name resolution from myweb: PASS
+myweb name resolution from mydb: PASS
+Both containers attached to network: PASS
+Alpine connectivity test: PASS
+Packet loss: 0%
+
+TASK 3: LINKING DRAWBACKS
+------------------------
+Legacy feature and deprecation understood: PASS
+One-way linking limitation understood: PASS
+User-defined network advantages understood: PASS
+
+CLEANUP
+-------
+myweb removed: PASS
+mydb removed: PASS
+mynetwork removed: PASS
+No lab containers remaining: PASS
+Docker service active after cleanup: PASS
+
+LMS EVALUATION
+--------------
+Lab Status: PASSED
+Final Score: 100/100
