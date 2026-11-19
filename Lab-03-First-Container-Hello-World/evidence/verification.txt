@@ -1,0 +1,71 @@
+LAB 03 - FIRST CONTAINER: HELLO WORLD
+=====================================
+
+Platform: Ubuntu 24.04.5 LTS
+Docker Version: 29.9.0
+Docker Compose Version: 5.6.0
+Docker Service: active
+
+1. DOCKER REPOSITORY
+--------------------
+Official Docker repository verified:
+https://download.docker.com/linux/ubuntu
+
+Signing key:
+/etc/apt/keyrings/docker.asc
+
+2. IMAGE DOWNLOAD
+-----------------
+Command:
+sudo docker pull hello-world
+
+Result:
+Image downloaded successfully.
+
+Image:
+hello-world:latest
+
+Image ID:
+1e4c05b897a7
+
+3. CONTAINER EXECUTION
+----------------------
+Command:
+sudo docker run hello-world
+
+Output:
+Hello from Docker!
+
+Container ID:
+bf69d9956a92
+
+Container Status:
+Exited (0)
+
+4. OUTPUT VERIFICATION
+----------------------
+Command:
+sudo docker run --rm hello-world | grep 'Hello from Docker!'
+
+Verified Output:
+Hello from Docker!
+
+5. CLEANUP
+----------
+Container removed successfully.
+
+Image untagged and deleted successfully.
+
+Final verification:
+sudo docker images hello-world
+
+Result:
+No hello-world image remained.
+
+6. LMS RESULT
+-------------
+Evaluation: Al Baari
+Score: 100 / 100
+Status: PASSED
+
+Lab 03 practical completed successfully.
