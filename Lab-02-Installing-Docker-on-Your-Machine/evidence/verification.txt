@@ -63,5 +63,4 @@ All applicable Docker installation and verification checks passed.
 Windows and macOS installation sections:
 Not applicable to this Ubuntu Linux environment.
 
-LMS Score:
-Pending confirmation.
+LMS Score: 100/100 - PASSED

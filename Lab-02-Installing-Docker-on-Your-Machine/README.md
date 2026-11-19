@@ -98,4 +98,4 @@ All applicable practical installation and verification tasks were completed succ
 
 Windows and macOS installation tasks were not applicable to this Linux-based environment.
 
-LMS score: Pending confirmation.
+LMS score: 100/100 - PASSED.
