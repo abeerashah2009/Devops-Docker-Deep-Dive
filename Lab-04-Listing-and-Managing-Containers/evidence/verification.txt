@@ -1,0 +1,60 @@
+LAB 04 - LISTING & MANAGING CONTAINERS
+======================================
+
+Platform: Ubuntu 24.04.5 LTS
+Docker Version: 29.9.0
+Docker Service: active
+
+1. IMAGE DOWNLOAD
+-----------------
+Image: nginx:1.27
+Result: Downloaded successfully.
+
+2. CONTAINER START
+------------------
+Name: my_nginx
+Mode: Detached (-d)
+Port Mapping: 8080:80
+Result: Container started successfully.
+
+Nginx welcome page:
+Welcome to nginx!
+
+3. LIST CONTAINERS
+------------------
+Command: sudo docker ps
+Result: my_nginx was running.
+Image: nginx:1.27
+Status: Up
+
+4. STOP CONTAINER
+-----------------
+Command: sudo docker stop my_nginx
+Result: Exited (0)
+
+Direct localhost HTTP status:
+000
+
+5. RESTART CONTAINER
+--------------------
+Command: sudo docker start my_nginx
+Result: Started successfully.
+HTTP Status: 200
+
+6. REMOVE CONTAINER
+-------------------
+Command: sudo docker rm my_nginx
+Result: Removed successfully.
+
+Final verification:
+sudo docker ps -a
+
+Result: No containers remained.
+
+7. LMS RESULT
+-------------
+Evaluation: Al Baari
+Score: 100 / 100
+Status: PASSED
+
+Lab 04 completed successfully.
