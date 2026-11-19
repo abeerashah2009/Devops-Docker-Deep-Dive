@@ -1,0 +1,30 @@
+LAB 10: EXPOSING PORTS AND RUNNING A WEB SERVER
+================================================
+
+Environment:
+Ubuntu 24.04.5 LTS
+Docker 29.9.0
+Apache Image: httpd:2.4
+
+VERIFICATION RESULTS
+--------------------
+1. Docker service: active
+2. Docker hello-world: successful
+3. Apache httpd:2.4 image: downloaded
+4. Host port 8080: free before container startup
+5. Custom index.html: created and verified
+6. Container name: web
+7. Port mapping: 8080 -> 80
+8. Container status: Up
+9. Website access using curl: successful
+10. HTTP response status: 200
+11. Expected page heading: verified
+12. Container cleanup: successful
+13. Host port 8080: released
+14. Apache image: retained
+
+LMS EVALUATION
+--------------
+Lab Status: PASSED
+Final Score: 100/100
+Evaluator: Al Baari
