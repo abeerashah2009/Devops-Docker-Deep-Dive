@@ -1,0 +1,58 @@
+LAB 01 - INTRODUCTION TO DOCKER CONCEPTS
+=========================================
+
+LMS ASSESSMENT
+--------------
+Evaluation: Al Baari
+Score: 100 / 100
+Status: PASSED
+
+ENVIRONMENT
+-----------
+Platform: AWS EC2
+Operating System: Ubuntu 24.04.5 LTS
+Docker Version: 29.10.0
+Docker Service: active
+Docker Group: docker
+
+DOCKER HUB
+----------
+Ubuntu image search: Successful
+Docker Hub connectivity: HTTP 200
+
+DOCKER IMAGE AND CONTAINER TESTS
+--------------------------------
+Image: hello-world
+Result: Pulled successfully
+Container test: Successful
+Output: Hello from Docker!
+
+KERNEL SHARING TEST
+-------------------
+Host kernel: 7.0.0-1014-aws
+Container kernel: 7.0.0-1014-aws
+Result: Both versions matched.
+
+CONTAINER STARTUP TEST
+----------------------
+Output: container started
+Observed real time: 0.724 seconds
+
+DEVOPS PIPELINE TEST
+--------------------
+Output: tests passed
+Container OS: Ubuntu 24.04.5 LTS
+Result: Successful
+
+CLEANUP
+-------
+Hello-world container: Removed
+Hello-world image: Removed
+Remaining containers: 0
+Ubuntu 24.04 image: Retained
+
+FINAL RESULT
+------------
+LMS Score: 100 / 100
+Lab Status: PASSED
+GitHub Portfolio: Prepared
