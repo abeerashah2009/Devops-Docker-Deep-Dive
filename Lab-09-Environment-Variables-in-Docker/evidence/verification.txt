@@ -1,0 +1,46 @@
+LAB 09 - ENVIRONMENT VARIABLES IN DOCKER
+==========================================
+
+1. Environment
+OS: Ubuntu 24.04
+Docker Version: 29.9.0
+Docker Service: active
+Base Image: python:3.12-slim
+
+2. Docker Installation
+Docker installed successfully.
+Hello-world verification: Passed
+
+3. Dockerfile ENV
+Variable: MYVAR
+Default Value: Hello, Docker!
+Verification: Passed
+
+4. Docker Image
+Image Name: env-example
+Build Status: Successful
+
+5. Runtime Override
+Command: docker run -e
+Output: Hello from docker run
+Verification: Passed
+
+6. Environment File
+File: app.env
+Variable: MYVAR=Hello from env file
+Verification: Passed
+
+7. Variable Precedence
+Dockerfile ENV: Hello, Docker!
+--env-file: Hello from env file
+-e: Hello from -e
+Highest Priority: -e
+
+8. Original Image Verification
+MYVAR=Hello, Docker!
+Verification: Passed
+
+9. LMS Assessment
+Score: 100/100
+Status: PASSED
+Evaluator: Al Baari
