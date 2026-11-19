@@ -1,0 +1,51 @@
+LAB 08 - UNDERSTANDING IMAGE LAYERS & CACHING
+=============================================
+
+1. Environment
+Docker Version: 29.9.0
+Buildx Version: 0.38.0
+Docker Service: active
+
+2. Node.js Application
+Application: app.js
+Dependency: Express 4.21.0
+Base Image: node:22-alpine
+
+3. Inefficient Dockerfile
+Image: my_node_app
+Source copied before npm install.
+Source modification caused npm install to run again.
+Rebuild Time: 11.856 seconds
+
+4. Optimized Dockerfile
+Image: my_node_app_v2
+Dependency files copied before application source.
+npm install layer reused from cache.
+
+5. Optimized Rebuild
+COPY package*.json ./ : CACHED
+RUN npm install : CACHED
+COPY . . : Executed again
+Rebuild Time: 0.875 seconds
+
+6. Build Comparison
+Inefficient: 11.856 seconds
+Optimized: 0.875 seconds
+Approximate Improvement: 92.6%
+
+7. Image History
+Command: sudo docker history my_node_app_v2
+Result: Docker image layers verified.
+
+8. Application Verification
+Node.js: v22.23.5
+npm: 10.9.9
+Express: 4.21.0
+
+9. Cleanup
+Both custom images removed successfully.
+Verification Output: images removed
+
+10. LMS Assessment
+Score: 94/100
+Status: PASSED
