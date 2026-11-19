@@ -1,0 +1,41 @@
+LAB 12: BIND MOUNTS VS. NAMED VOLUMES
+=====================================
+
+ENVIRONMENT
+-----------
+Ubuntu 24.04.5 LTS
+Docker 29.9.0
+Nginx: nginx:1.27-alpine
+
+BIND MOUNT VERIFICATION
+-----------------------
+1. Host directory created: PASS
+2. Host file created: PASS
+3. Nginx bind container started: PASS
+4. Host file served on port 8080: PASS
+5. Host changes reflected immediately: PASS
+6. Read-only mount protection: PASS
+
+NAMED VOLUME VERIFICATION
+-------------------------
+1. Named volume my-volume created: PASS
+2. Nginx named-volume container started: PASS
+3. Host file copied into volume: PASS
+4. File served on port 8081: PASS
+5. Volume metadata inspected: PASS
+6. Original container removed: PASS
+7. Replacement container started: PASS
+8. Data persisted after container removal: PASS
+
+CLEANUP
+-------
+1. Nginx containers removed: PASS
+2. Named volume removed: PASS
+3. Host directory removed: PASS
+4. Ports 8080 and 8081 released: PASS
+
+LMS EVALUATION
+--------------
+Lab Status: PASSED
+Final Score: 100/100
+Evaluator: Al Baari
