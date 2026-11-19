@@ -1,0 +1,20 @@
+LAB 17 - DOCKER COMPOSE WEB + DATABASE STACK
+LMS SCORE: 100/100
+STATUS: PASSED
+
+Docker Engine: 29.9.0
+Docker Compose: v5.6.0
+
+Compose configuration: VALID
+Services: db, web
+MySQL container: RUNNING / HEALTHY
+Nginx container: RUNNING
+HTTP test: HTTP/1.1 200 OK
+Database: exampledb EXISTS
+Database network test: db port 3306 OPEN
+Compose cleanup: COMPLETED
+Persistent volume: web-db-stack_db_data RETAINED
+Docker service: ACTIVE
+.env: EXCLUDED FROM GIT
+
+FINAL RESULT: 100/100 - PASSED
