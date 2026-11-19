@@ -1,0 +1,47 @@
+LAB 13: DOCKER NETWORKING BASICS
+================================
+
+ENVIRONMENT
+-----------
+Operating System: Ubuntu 24.04
+Docker Server: 29.10.0
+Alpine Image: alpine:3.20
+
+DOCKER INSTALLATION
+-------------------
+Docker installation: PASS
+Docker service active: PASS
+Hello-world test: PASS
+
+DEFAULT BRIDGE NETWORK
+----------------------
+Alpine image pulled: PASS
+container1 created: PASS
+container2 created: PASS
+Container IP addresses inspected: PASS
+Ping by IP address: PASS
+Default bridge name resolution limitation: VERIFIED
+
+USER-DEFINED BRIDGE NETWORK
+---------------------------
+labnet created: PASS
+c1 created: PASS
+c2 created: PASS
+Ping c2 by name: PASS
+Network inspection: PASS
+Both containers listed: PASS
+
+CLEANUP
+-------
+container1 removed: PASS
+container2 removed: PASS
+c1 removed: PASS
+c2 removed: PASS
+labnet removed: PASS
+No lab containers remaining: PASS
+
+LMS EVALUATION
+--------------
+Lab Status: PASSED
+Final Score: 100/100
+Evaluator: Al Baari
